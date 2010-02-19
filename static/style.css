@@ -1,0 +1,15 @@
+body {font-family:sans; background-color:#efefef}
+  ul#gombok { text-align:center}
+  ul#gombok a {color:white; text-decoration:none}
+  ul#gombok li {display:inline;  padding:8px; margin:20px}
+  li#gebasz{background-color:red}
+  li#stimmel{background-color:green}
+  li#gcal{background-color: #333}
+  hr{ margin-top:50px}
+  
+  h1 a { color:#6285c4; text-decoration:none}
+  h1 a .pink{ color:#fb3939}
+  a img { border:none}
+  img#screenshot{width:266px; height:210px}
+  
+  iframe {float:left; margin-right:25px}

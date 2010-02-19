@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>órarender - hibajelentő</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1><a href="/">órarend<span class="pink">r</a></a></h1>
+<h2>{{ title }}</h2>
+<p>{{message}}</p>
+{{ preview }}
+<form method="post">
+<p>Mi nem stimmel a képen?</p><textarea rows=8 cols=80 name="megjegyzes">{{megjegyzes}}</textarea>
+<input type="submit" value="ok">
+</form>
+</ul>
+<p><a href="http://bergengocia.net">Gazs</a></p>
+</body>
+</html>

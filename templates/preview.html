@@ -1,0 +1,43 @@
+<ul>
+<li>hétfő
+  <ul>{% for sor in ical %} 
+      {% ifequal sor.nap "mo" %}
+    <li>{{sor.ido}} <b>{{ sor.kurzus }}</b> {{sor.hely}}</li>
+    {% endifequal %}
+    {% endfor %}
+  </ul>
+</li>
+<li>kedd
+  <ul>{% for sor in ical %} 
+      {% ifequal sor.nap "tu" %}
+    <li>{{sor.ido}} <b>{{ sor.kurzus }}</b> {{sor.hely}}</li>
+    {% endifequal %}
+    {% endfor %}
+  </ul>
+</li>
+<li>szerda
+  <ul>{% for sor in ical %} 
+      {% ifequal sor.nap "we" %}
+    <li>{{sor.ido}} <b>{{ sor.kurzus }}</b> {{sor.hely}}</li>
+    {% endifequal %}
+    {% endfor %}
+  </ul>
+</li>
+<li>csütörtök
+  <ul>{% for sor in ical %} 
+      {% ifequal sor.nap "th" %}
+    <li>{{sor.ido}} <b>{{ sor.kurzus }}</b> {{sor.hely}}</li>
+    {% endifequal %}
+    {% endfor %}
+  </ul>
+</li>
+<li>péntek
+  <ul>{% for sor in ical %} 
+      {% ifequal sor.nap "fr" %}
+    <li>{{sor.ido}} <b>{{ sor.kurzus }}</b> {{sor.hely}}</li>
+    {% endifequal %}
+    {% endfor %}
+  </ul>
+</li>
+
+</ul>

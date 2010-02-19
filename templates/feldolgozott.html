@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>{{ title }} - órarender</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1><a href="/">órarend<span class="pink">r</a></a></h1>
+<h2>{{ title }}</h2>
+<p>Kérlek nézd át, hogy minden adat stimmel-e:</p>
+{{ preview }}
+
+<ul id="gombok">
+<li id="gebasz"><a href="/hiba?i={{key}}">&lt; Gebasz van, írok hibajelentőt</a></li>
+<li id="stimmel"><a href="/cal?i={{key}}"><img src="/static/9224.png" width="16" height="16">Stimmel, letöltöm &gt;</a></li>
+<li id="gcal"><a href="http://www.google.com/calendar/render?cid=http://orarender.appspot.com/cal?i={{key}}"><img src="http://www.google.com/calendar/images/favicon.ico"> Hozzáadom Google Calendarhoz &gt; </a>
+</ul>
+<hr>
+<p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">Ha hasznosnak találtad ezt a szolgáltatást, hívj meg egy csokira-sörre:
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYArr2QYUxEROSuAb0IIgNbyxR2mhD1cwFEiyPrOshi8UD8h4xFKCUIndE1gt58blqoRP6meSqqY3YKnVNyTM9/08mmVqJG4CVXrp3tfsMEiOdAVOiks45dJSHstbiPtvpnIWY1Z3rGSfXCybl3YNVca87fb16arfhSZKteU1KWgMzELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI2nQ39n3Wc/6AgZDoK/mlARplkvx/fh7xrfkqh5GX5R27Khhtz5q4mXVO4Q0ZKZnUK3ejvu4+ITDit7QY1sRsgGV/GPswafCIqSJ1OWrrxZKAGgn23CMsA6nyi5ZnpYOI4DsoNJISelWYoRHOX5rTAXrXlhVnDX75c2orCSTpXx1wfnf2nVrlWikv7fnOqB+3ldX7q/gcQRly0fagggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMDAxMzAwOTIwMDJaMCMGCSqGSIb3DQEJBDEWBBTkNXj0Mnfh1iT/hEf/T9oSXjSiyjANBgkqhkiG9w0BAQEFAASBgLFFd1cA4UnjjUtna+Cmva5rWEXN+dKs6sljZ8ULbbDXCf9Bw2Wwi4csvjLC2T5JbDWxsKei3PoEU6DJyiLOdZoFLBwjlmsxo9SFHNRtb+OiyLeBvoVfZf5nlM/kfVMiVVXgPCFrpi46yQ+0T5JLNRZ6cyo9rWqn5Sa8enkLaRoE-----END PKCS7-----
+">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</p>
+<p><a href="http://bergengocia.net">Gazs</a></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>{{ title }} - debug - órarender</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1><a href="/">órarend<span class="pink">r</a></a></h1>
+<h2>debug: {{ title }}</h2>
+<iframe src="/tagsoup?i={{key}}" width="70%" height="300px"></iframe><code>{{gomoku}}</code>
+{{ preview }}
+<br>
+megjegyzés: {{megjegyzes}}
+<br>
+<form method="get"><input type="submit" value="resetgomb" name="resetgomb"></input></form>
+<p><a href="http://bergengocia.net">Gazs</a></p>
+</body>
+</html>

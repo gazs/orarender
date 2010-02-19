@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>órarender</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1><a href="/">órarend<span class="pink">r</a></a></h1>
+  <p>Ezen az oldalon az ETR órarendjét tudod átalakítani iCalendar
+  fájllá, amit aztán Google Calendarban, Apple iCalban, Outlookban,
+  Evolutionban, Mozilla Lightningben vagy más hasonló naptárprogramban tudsz
+  felhasználni.</p>
+  <form enctype="multipart/form-data" method="post"> <label
+		  for="etrfile">etr-órarend</label>
+  <input id="etrfile" name="etrfile" type="file"></input> <input
+  type="submit" value="uzsgyi!">
+  </form>
+  <h2>Hogyan használhatom?</h2>
+
+  <p>Az <a href="http://etr.elte.hu">ETR</a> órarend nyomtatási
+  változatát mentsd le a számítógépedre, majd ezt a html fájlt töltsd
+  fel a felső feltöltőbe, fel.</p> <img id="screenshot"
+  src="/static/screenshot.png" title="egy ilyet kell letöltened."> <p><a
+	  href="/static/kamuadatos-orarend.html">Ha nem szeretnéd egyből
+	  a saját adataidra ráereszteni, csináltam egy
+	  loremipsum-kurzusokkal feltötött mintaórarendet, ezzel is
+	  megpróbálhatod</a>. Az feldolgozva <a
+	  href="http://orarender.appspot.com/check?i=aglvcmFyZW5kZXJyDQsSB09yYXJlbmQYBQw">így
+	  néz ki</a></p> <h2>Pár tudnivaló:</h2>
+  <ul> <li>Nagyon-nagyon friss cucc ez, alig száradt meg rajta a
+	  festék.</li> <li>Csak etr.elte.hu-val próbáltam.</li>
+	  <li>Egyelőre nem támogatja a
+	  többszörös átfedéseket (zöld)</li>
+	  <li>Szerveroldalon eltárolom a feltöltött órarendeket. Nem
+	  gonoszságból, csak azért, hogy ha törik valahol a parszer,
+	  akkor tudjam korrigálni, meg hogy tudj könnyedén feliratkozni
+	  az elkészült órarendre Google Calendarból. Becsszóra nem élek
+	  vissza az infóiddal.</li>
+  </ul>
+  
+<p><a href="http://bergengocia.net">Gazs</a></p>
+</body>
+</html>

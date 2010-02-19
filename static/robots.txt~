@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /cal
+Disallow: /check
+Disallow: /debug
+Disallow: /tagsoup
+
